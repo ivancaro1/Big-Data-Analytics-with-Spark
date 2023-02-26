@@ -23,11 +23,7 @@ object Lists {
    * @return The sum of all elements in `xs`
    */
   def sum(xs: List[Int]): Int = {
-    if (xs.isEmpty){
-      throw new IllegalArgumentException("The list cannot be empty.")
-    } else {
       xs.foldLeft(0)(_ + _)
-    }
   }
   /**
    * This method returns the largest element in a list of integers. If the
@@ -44,7 +40,7 @@ object Lists {
    */
   def max(xs: List[Int]): Int =  {
     if (xs.isEmpty) {
-      throw new IllegalArgumentException("The list cannot be empty.")
+      throw new java.util.NoSuchElementException("The list cannot be empty.")
     } else {
       xs.foldLeft(Int.MinValue)((max, current) => if (current > max) current else max)
     }

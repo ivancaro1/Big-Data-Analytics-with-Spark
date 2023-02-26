@@ -112,12 +112,7 @@ class ListsSuite extends munit.FunSuite {
   }
 
   test("sum of an empty list (10pts)") {
-     try {
-       sum(List())
-       fail("No exception has been thrown")
-     } catch {
-       case e: IllegalArgumentException => ()
-     }
+    assert(sum(List()) == 0)
    }
 
   test("max of a few numbers (10pts)") {
@@ -141,7 +136,7 @@ class ListsSuite extends munit.FunSuite {
        max(List())
        fail("No exception has been thrown")
      } catch {
-       case e: IllegalArgumentException => ()
+       case e: java.util.NoSuchElementException => ()
      }
    }
 
