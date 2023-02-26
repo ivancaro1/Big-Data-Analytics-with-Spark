@@ -88,7 +88,6 @@ class ListsSuite extends munit.FunSuite {
    */
   import Lists._
 
-
   /**
    * We only provide two very basic tests for you. Write more tests to make
    * sure your `sum` and `max` methods work as expected.
@@ -104,10 +103,47 @@ class ListsSuite extends munit.FunSuite {
     assert(sum(List(1,2,0)) == 3)
   }
 
+  test("sum of negative numbers (10pts)") {
+    assert(sum(List(-2, -3, 0)) == -5)
+  }
+
+  test("sum of negative and positive numbers (10pts)") {
+    assert(sum(List(-2, -3, 2, 3)) == 0)
+  }
+
+  test("sum of an empty list (10pts)") {
+     try {
+       sum(List())
+       fail("No exception has been thrown")
+     } catch {
+       case e: IllegalArgumentException => ()
+     }
+   }
+
   test("max of a few numbers (10pts)") {
     assert(max(List(3, 7, 2)) == 7)
   }
 
+  test("max of a few numbers including negative and positive numbers (10pts)") {
+    assert(max(List(-2, -3, 2, 3)) == 3)
+  }
+
+  test("max of a few numbers including repeated elements (10pts)") {
+    assert(max(List(1,2,3,4,5,5,2)) == 5)
+  }
+
+  test("max of a few negative numbers (10pts)") {
+    assert(max(List(-1,-2,-3)) == -1)
+  }
+
+  test("max of a few negative numbers (10pts)") {
+     try {
+       max(List())
+       fail("No exception has been thrown")
+     } catch {
+       case e: IllegalArgumentException => ()
+     }
+   }
 
 
   import scala.concurrent.duration._

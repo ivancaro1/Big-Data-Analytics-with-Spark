@@ -1,0 +1,94 @@
+2023.02.05 16:15:38 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\ivan.caro\Downloads\bigdata-example\.metals\lsp.trace.json or C:\Users\ivan.caro\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2023.02.05 16:15:39 INFO  logging to file C:\Users\ivan.caro\Downloads\bigdata-example\.metals\metals.log
+2023.02.05 16:15:39 INFO  Started: Metals version 0.11.10 in workspace 'C:\Users\ivan.caro\Downloads\bigdata-example' for client Visual Studio Code 1.75.0.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/ivan.caro/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.02.05 16:15:44 INFO  time: initialize in 4.32s
+2023.02.05 16:15:47 WARN  Build server is not auto-connectable.
+2023.02.05 16:15:47 WARN  no build tool detected in workspace 'C:\Users\ivan.caro\Downloads\bigdata-example'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.02.05 16:15:47 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+2023.02.05 16:15:58 INFO  no build target found for C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala. Using presentation compiler with project's scala-library version: 3.2.1
+2023.02.05 16:16:27 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+Feb 05, 2023 4:16:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:400)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:2012)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.02.05 16:20:14 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+2023.02.05 16:20:21 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+Feb 05, 2023 4:20:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:743)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:731)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2112)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:400)
+	at scala.meta.internal.metals.MetalsLanguageServer.executeCommand(MetalsLanguageServer.scala:2012)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+2023.02.05 16:21:14 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\test\scala\example\ListsSuite.scala
+2023.02.05 16:21:39 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\test\scala\example\ListsSuite.scala
+2023.02.05 16:32:29 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\build.sbt
+2023.02.05 16:35:29 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+Feb 05, 2023 4:36:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 119
+Feb 05, 2023 4:36:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 135
+2023.02.05 16:36:30 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+2023.02.05 16:37:58 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\main.scala.scala
+2023.02.05 16:38:05 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\main..scala
+2023.02.05 16:38:21 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\main..scala
+2023.02.05 16:39:06 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\main..scala
+2023.02.05 16:39:13 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\main..scala
+2023.02.05 16:40:39 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\test\scala\example\ListsSuite.scala
+2023.02.05 16:42:00 WARN  no build target for: C:\Users\ivan.caro\Downloads\bigdata-example\example\src\main\scala\example\Lists.scala
+2023.02.05 16:44:56 INFO  shutting down Metals
